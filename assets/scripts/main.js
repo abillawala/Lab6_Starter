@@ -76,13 +76,13 @@ function initFormHandler() {
 		e.preventDefault();
 
 		// B4. TODO - Create a new FormData object from the <form> element reference above
-		let FormData = new FormData(form);
+		let formData = new FormData(form);
 
 		// B5. TODO - Create an empty object (we'll refer to this object as recipeObject to
 		//            make this easier to read), and then extract the keys and corresponding
 		//            values from the FormData object and insert them into recipeObject
 		let recipeObject = {};
-		for(let [key, value] of FormData.entries()) {
+		for(let [key, value] of formData.entries()) {
 			recipeObject[key] = value;
 		}
 		// B6. TODO - Create a new <recipe-card> element
