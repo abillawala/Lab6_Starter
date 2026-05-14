@@ -89,7 +89,7 @@ class RecipeCard extends HTMLElement {
 		  }
 		
 		  p.organization {
-			color: black !important;
+			color: var(--text-color, black);
 		  }
 		
 		  p.title {

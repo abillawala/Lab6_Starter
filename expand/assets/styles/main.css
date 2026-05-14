@@ -56,3 +56,14 @@ main {
 .hidden {
   display: none;
 }
+
+/* expand section */
+recipe-card {
+  --title-color: red; 
+  --card-border-color: green;
+  --card-bg-color: yellow;
+}
+
+recipe-card:hover {
+  --card-border-color: #ea4335;
+}
