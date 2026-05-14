@@ -20,13 +20,15 @@ class RecipeCard extends HTMLElement {
 		style.textContent = ` 
 			:host {
 				/* Define variables for card's theme */
-				--card-bg: #ffffff;
-				--card-border: 1px solid rgb(223, 225, 229);
+				--card-bg-color: #ffffff;
+				--card-border-color: 1px solid rgb(223, 225, 229);
+				--title-color: #1a0dab;
+				--text-color: #70757A;
+
 				--card-shadow: none;
 				--primary-font: sans-serif;
-				--title-font-size: 16 px;
+				--title-font-size: 16px;
 				--secondary-text-color: #70757A;
-				--link-color: #1a0dab;
 				--rating-color: #70757A;
 			}
 		* {
@@ -37,7 +39,7 @@ class RecipeCard extends HTMLElement {
 		
 		  a {
 			text-decoration: none;
-			color: var(--link-color);
+			color: var(--title-color);
 		  }
 		
 		  a:hover {
@@ -45,9 +47,9 @@ class RecipeCard extends HTMLElement {
 		  }
 		
 		  article {
-			background-color: var(--card-bg);
+			background-color: var(--card-bg-color);
     		align-items: center;
-			border: var(--card-border);
+			border: var(--card-border-color);
 			border-radius: 8px;
 			display: grid;
 			grid-template-rows: 118px 56px 14px 18px 15px 36px;
